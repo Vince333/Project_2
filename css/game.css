@@ -1,0 +1,35 @@
+.background    { background: black;
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: rgb(255, 100, 100); }
+.wall          { background: orange;   }
+
+.actor  { position: absolute;  }
+.gem   { background-image: url("Images/gem.gif");
+         background-size: 12px 12px;}
+.player { background-image: url("Images/miner.png");
+          background-size: 34px 40px;}
+.boulder {background-image: url("Images/boulder.png");
+          background-size: 20px 20px}
+.arrow {background-image: url("Images/arrow.png");
+        background-size: 20px 12px}
+.spider {background-image: url("Images/spider.gif");
+         background-size: 30px 20px}
+.key {background-image: url("Images/key.png");
+      background-size: 30px 20px}
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background-image: url("Images/death.png");
+  background-size: 30px 36px;
+}
+.won .player {
+   transform: rotateY(180deg);
+}
